@@ -1,43 +1,73 @@
+<!-- ver____90s-style-home -->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>★ Shinya Suzuki's portfolio site！ ★</title>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: 'MS Gothic', monospace;
+      text-align: center;
+    }
+    a {
+      color: magenta;
+      text-decoration: none;
+    }
+    .menu {
+      color: lime;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .update-log {
+      border-top: 1px solid white;
+      margin-top: 40px;
+      padding-top: 20px;
+    }
+    .blink {
+      animation: blink 1s steps(1) infinite;
+      color: red;
+    }
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <h1>★Welcome to Shinya Suzuki's portfolio site！ ★</h1>
+  <p><img src="counter.gif" alt="あなたは87人目のお客様です！"></p>
+  <p>最終更新日 2025/05/31</p>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <div class="menu">★ メニュー ★</div>
+  <ul style="list-style: none; padding: 0;">
+    <li><a href="#">・プロフィール</a> → 管理人の生態がわかるかも(笑)</li>
+    <li><a href="#">・日記(不定期更新)</a> → 更新は気まぐれ♪</li>
+    <li><a href="#">・趣味の部屋</a> → オタク趣味全開☆</li>
+    <li><a href="#">・イラストギャラリー(準備中)</a> → まだ工事中(汗)</li>
+    <li><a href="#">・掲示板(BBS)</a> → カキコしてね！キリ番報告もこちらで！</li>
+    <li><a href="#">・リンクの冒険</a> → お友達の相互リンクです <span class="blink">☆New!</span></li>
+    <li><a href="#">・フリー素材置き場(工事中)</a> → 気が向いたら増える予定(笑)</li>
+    <li><a href="#">・質問コーナー(近日追加予定)</a> → 何でも聞いてね☆（答えるとは言ってない）</li>
+  </ul>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <div class="update-log">
+    <div>★ 更新履歴 ★</div>
+    <table align="center" border="1" cellpadding="5">
+      <tr><td>2025/04/28</td><td>リンク集に1件追加 <span class="blink">☆New</span></td></tr>
+      <tr><td>2025/04/13</td><td>プロフィールページ公開（内容未定）</td></tr>
+      <tr><td>2025/04/01</td><td>サイト開設！トップページ作成</td></tr>
+    </table>
+  </div>
+
+  <p style="margin-top: 40px; color: #00FF00;">
+    © 2025 ChimaeraV8 All rights reserved.<br>
+    推奨ブラウザ：Internet Explorer 6.0以上<br>
+    推奨画面サイズ：800×600（笑）
+  </p>
+
+</body>
 </html>
