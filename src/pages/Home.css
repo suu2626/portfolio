@@ -1,13 +1,11 @@
-/* ver____Home.css */
-.home-body {
+body {
   background-color: black;
   color: lime;
   font-family: 'MS Gothic', monospace;
   text-align: center;
-  padding: 20px;
 }
 
-.external-link {
+a {
   color: magenta;
   text-decoration: none;
 }
@@ -18,7 +16,7 @@
   box-sizing: border-box;
 }
 
-.scroll-text {
+.marquee h1 {
   display: inline-block;
   padding-left: 100%;
   animation: scroll-left 15s linear infinite;
@@ -44,7 +42,6 @@
 .menu-list {
   list-style: none;
   padding: 0;
-  margin-bottom: 40px;
 }
 
 .menu-list li {
@@ -66,9 +63,4 @@
   50% {
     opacity: 0;
   }
-}
-
-.footer-text {
-  margin-top: 40px;
-  color: #00FF00;
 }

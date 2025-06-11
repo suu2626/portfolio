@@ -11,12 +11,8 @@ function App() {
         <header className="App-header">
           <h1>ポートフォリオサイト</h1>
           <nav>
-            <Link to="/" style={{ color: '#61dafb', margin: '0 10px' }}>
-              ホーム
-            </Link>
-            <Link to="/profile" style={{ color: '#61dafb', margin: '0 10px' }}>
-              プロフィール
-            </Link>
+            <Link to="/">ホーム</Link>
+            <Link to="/profile">プロフィール</Link>
           </nav>
         </header>
 
