@@ -29,13 +29,13 @@ const Home = () => {
           <a href="#/profile">・プロフィール</a> → 簡単な自己紹介です
         </li>
         <li>
-          <a href="#">・プロジェクト</a> → 過去参画案件
+          <button onClick={() => alert("準備中です")}>・プロジェクト</button> → 過去参画案件
         </li>
         <li>
-          <a href="#">・スキル</a> → 保有スキル一覧
+          <button onClick={() => alert("準備中です")}>・スキル</button> → 保有スキル一覧
         </li>
         <li>
-          <a href="#">・お問合せ</a> → お気軽にお問い合わせください
+          <button onClick={() => alert("準備中です")}>・お問合せ</button> → お気軽にお問い合わせください
         </li>
       </ul>
 
