@@ -5,15 +5,8 @@ import Profile from './pages/Profile';
 
 function App() {
   return (
-    <Router>
       <div className="App">
-        <header className="App-header">
-          <h1>ポートフォリオサイト</h1>
-          <nav>
-            <Link to="/">ホーム</Link>
-            <Link to="/profile">プロフィール</Link>
-          </nav>
-        </header>
+        <header className="App-header"></header>
 
         <main>
           <Routes>
@@ -22,7 +15,6 @@ function App() {
           </Routes>
         </main>
       </div>
-    </Router>
   );
 }
 
