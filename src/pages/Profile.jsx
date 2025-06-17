@@ -1,4 +1,3 @@
-// ver____Profile.jsx
 import React from 'react';
 import ProfileBlock from '../components/ProfileBlock';
 
