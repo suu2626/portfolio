@@ -1,0 +1,8 @@
+.profile-page {
+  background-image: url('../images/profile-01.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 60px 0;
+}

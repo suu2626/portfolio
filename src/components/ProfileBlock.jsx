@@ -39,14 +39,16 @@ const ProfileBlock = ({ title, content, direction = 'left' }) => {
         borderRadius: '12px',
         width: '80%',
         maxWidth: '600px',
+        backgroundImage: 'url(/images/block-bg.png)',
+        backgroundSize: 'cover',
         marginLeft: 'auto',
         marginRight: 'auto',
         boxShadow: '0 4px 20px rgba(247, 143, 8, 0.3)',
         fontFamily: `'Noto Sans JP', 'Helvetica Neue', sans-serif`,
       }}
     >
-      <p>{title}</p>
-      <p>{content}</p>
+      <h2 style={{ fontSize: '1.5em', marginBottom: '0.5em' }}>{title}</h2>
+      <p style={{ fontSize: '1.1em' }}>{content}</p>
     </motion.div>
   );
 };
