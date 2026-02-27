@@ -34,7 +34,7 @@ const ProfileBlock = ({ title, content, direction = 'left' }) => {
       style={{
         margin: '50px 0',
         padding: '20px',
-        background: '#f0f0f0',
+        background: 'rgba(226, 226, 226, 0.5)',
         color: '#262626',
         borderRadius: '12px',
         width: '80%',
@@ -43,7 +43,7 @@ const ProfileBlock = ({ title, content, direction = 'left' }) => {
         backgroundSize: 'cover',
         marginLeft: 'auto',
         marginRight: 'auto',
-        boxShadow: '0 4px 20px rgba(247, 143, 8, 0.3)',
+        boxShadow: '0 4px 20px rgba(62, 62, 62, 0.2)',
         fontFamily: `'Noto Sans JP', 'Helvetica Neue', sans-serif`,
       }}
     >

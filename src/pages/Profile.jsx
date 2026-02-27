@@ -1,6 +1,6 @@
 import React from 'react';
 import ProfileBlock from '../components/ProfileBlock';
-import bgImage from './images/profile-01.JPG';
+import bgImage from './images/lrc_20231229_30-102.jpg';
 import './css/profile.css';
 
 const blocks = [
@@ -20,11 +20,11 @@ const Profile = () => (
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       minHeight: '100vh',
-    }}
+    }}  
   >
     {blocks.map((block, index) => (
       <ProfileBlock
-        key={index}
+        key={index} 
         title={block.title}
         content={block.content}
         direction={block.direction}
