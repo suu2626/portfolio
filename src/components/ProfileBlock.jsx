@@ -14,9 +14,9 @@ const variants = {
     x: 0,
     scale: 1,
     transition: {
-      duration: 6.8, // ← 表示スピード（秒）。小さいほど速い
-      type: 'spring',
-      bounce: 0.3 // ← バウンド量。0で弾まない、1で大きく弾む
+      duration: 2.0,    // ← 好みで1.5〜3.0の間で調整
+      type: 'tween',
+      ease: 'easeOut',  // ← 最初速く、最後ゆっくり止まる
     },
   },
   exit: (direction) => ({
