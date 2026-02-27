@@ -2,19 +2,23 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './css/projects.css';
+import HomeButton from '../components/HomeButton';
 
 const projects = [
   {
     id: 1,
-    title: 'プロジェクト案件名 A',
+    title: '設備管理・基幹システムの保守運用',
+    detail: '要件定義からデプロイまで一貫して担当。顧客ヒアリングに基づく設計・開発・テスト・保守を担当。Java（バックエンド）・JavaScript（フロントエンド）・COBOL（バッチ処理）を使用。既存コードへの影響を最小限に抑えた機能追加・改善を実施し、業務効率の向上を実現。ソースコード解析とDB調査による問い合わせ対応、業務マニュアルの作成・修正も担当。',
   },
   {
     id: 2,
-    title: 'プロジェクト案件名 B',
+    title: '大学の通信教育システムの改修',
+    detail: '基本設計から保守まで一貫して担当。要件書をもとに基本設計書・詳細設計書を作成し、DB設計・クエリ作成・影響調査を実施。既存システムへの機能追加を中心に製造を担当し、単体試験・結合試験の仕様書作成から障害対応まで対応。リリース後の保守対応も担当。',
   },
   {
     id: 3,
-    title: 'プロジェクト案件名 C',
+    title: 'アパレル系ECサイトの運営と開発',
+    detail: '顧客との要件打ち合わせから実装・テストまでを担当。基幹システムとのデータ連携機能、およびトップ・商品・カテゴリ・カート・マイページの各ページを実装。検証環境での結合テスト、複数人による総合テストを実施し品質を担保。',
   },
 ];
 
@@ -59,7 +63,7 @@ const ProjectItem = ({ project, index }) => {
           >
             <div className="project-detail-inner">
               <p className="project-detail-placeholder">
-                案件の詳細をここに記載してください。
+                {project.detail} 
               </p>
             </div>
           </motion.div>
@@ -72,6 +76,9 @@ const ProjectItem = ({ project, index }) => {
 const Projects = () => {
   return (
     <div className="projects-page">
+
+      <HomeButton /> 
+      
       {/* 背景装飾 */}
       <div className="projects-bg">
         <div className="bg-orb orb-1" />
