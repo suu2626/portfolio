@@ -1,10 +1,17 @@
 // ver____Home.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './css/Home.css';
     
 const Home = () => {
   return (
-    <div className="home-body">
+    <div className="home-body" style={{ 
+      backgroundColor: 'black',
+      color: 'lime',
+      minHeight: '100svh',
+      fontFamily: "'MS Gothic', monospace",
+      textAlign: 'center',
+      }}>
       <div className="marquee">
         <h1 className="scroll-text">★Welcome to Shinya Suzuki's portfolio site！ ★</h1>
       </div>
@@ -30,8 +37,8 @@ const Home = () => {
 
       <div className="menu">★ メニュー ★</div>
       <ul className="menu-list">
-        <li><a href="/profile" className="external-link">・プロフィール</a> → 簡単な自己紹介です</li>
-        <li><a href="#" className="external-link">・プロジェクト</a> → 過去参画案件</li>
+        <li><Link to="/profile">・プロフィール</Link> → 簡単な自己紹介です</li>
+        <li><Link to="/projects">・プロジェクト</Link> → 過去参画案件</li>
         <li><a href="#" className="external-link">・スキル</a> → 保有スキル一覧</li>
         <li><a href="#" className="external-link">・お問合せ</a> → お気軽にお問い合わせください</li>
       </ul>

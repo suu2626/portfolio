@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   padding: 60px 0;
+  -webkit-overflow-scrolling: auto; /* ← 慣性スクロール無効化 */
 }
 
 /* PC：左右にオフセット */

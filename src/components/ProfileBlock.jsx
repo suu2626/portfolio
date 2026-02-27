@@ -7,29 +7,24 @@ const variants = {
   hidden: (direction) => ({
     opacity: 0,
     x: direction === 'left' ? -120 : 120,
-    scale: 0.95,
   }),
   visible: {
     opacity: 1,
     x: 0,
-    scale: 1,
+    y: 0,
     transition: {
       duration: 2.0,    // ← 好みで1.5〜3.0の間で調整
       type: 'tween',
       ease: 'easeOut',  // ← 最初速く、最後ゆっくり止まる
     },
   },
-  exit: (direction) => ({
-    opacity: 0,
-    x: direction === 'left' ? 100 : -100,
-    transition: {
-      duration: 0.2 // ← 非表示スピード（秒）
-    },
-  }),
 };
 
 const ProfileBlock = ({ title, content, direction = 'left' }) => {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1
+  });
 
   return (
     <motion.div
@@ -38,6 +33,7 @@ const ProfileBlock = ({ title, content, direction = 'left' }) => {
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       variants={variants}
+      layout={false}
       className={`profile-block ${direction === 'left' ? 'block-left' : 'block-right'}`}
       style={{
         margin: '24px auto',

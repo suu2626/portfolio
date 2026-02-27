@@ -1,13 +1,17 @@
-body {
+.home-body {
   background-color: black;
-  color: lime;
+  color: magenta !important;
   font-family: 'MS Gothic', monospace;
   text-align: center;
+  text-decoration: none !important;
 }
 
-a {
-  color: magenta;
-  text-decoration: none;
+.home-body a:-webkit-any-link,
+.home-body a,
+.home-body a:visited,
+.home-body a:hover {
+  color: white !important;
+  text-decoration: none !important;
 }
 
 .marquee {
@@ -48,6 +52,21 @@ a {
   margin: 12px 0;
 }
 
+.menu-list a,
+.menu-list a:-webkit-any-link {
+  color: violet !important;
+  text-decoration: none !important;
+  display: inline-block;
+  border: 1px solid violet;
+  padding: 2px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.menu-list a:hover {
+  background-color: violet;
+  color: black !important;
+}
 .update-log {
   border-top: 1px solid white;
   margin-top: 40px;

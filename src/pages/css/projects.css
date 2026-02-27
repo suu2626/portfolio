@@ -1,0 +1,203 @@
+/* projects.css */
+
+.projects-page {
+  min-height: 100svh;
+  background: #0a0a0f;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+/* 背景の光彩装飾 */
+.projects-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+}
+
+.orb-1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #4f46e5, transparent);
+  top: -100px;
+  left: -100px;
+}
+
+.orb-2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #0ea5e9, transparent);
+  bottom: -50px;
+  right: -50px;
+}
+
+.orb-3 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #8b5cf6, transparent);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* コンテナ */
+.projects-container {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ヘッダー */
+.projects-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.projects-label {
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: #4f46e5;
+  margin: 0 0 12px 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.projects-title {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.02em;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.projects-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #4f46e5, #0ea5e9);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* プロジェクトリスト */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* プロジェクトアイテム */
+.project-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.project-item:hover {
+  border-color: rgba(79, 70, 229, 0.5);
+}
+
+/* ヘッダーボタン */
+.project-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: #ffffff;
+  font-family: 'Noto Sans JP', 'Helvetica Neue', sans-serif;
+}
+
+.project-header.open {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-index {
+  font-size: 0.72em;
+  font-weight: 700;
+  color: #4f46e5;
+  letter-spacing: 0.1em;
+  min-width: 28px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.project-title {
+  flex: 1;
+  font-size: 1.05em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.02em;
+}
+
+.project-chevron {
+  font-size: 0.65em;
+  color: rgba(255, 255, 255, 0.4);
+  display: inline-block;
+}
+
+/* 詳細エリア */
+.project-detail {
+  overflow: hidden;
+}
+
+.project-detail-inner {
+  padding: 24px 28px;
+}
+
+.project-detail-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.92em;
+  line-height: 1.8;
+  margin: 0;
+  font-family: 'Noto Sans JP', 'Helvetica Neue', sans-serif;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 40px 0;
+  }
+
+  .projects-container {
+    padding: 0 16px;
+  }
+
+  .projects-header {
+    margin-bottom: 40px;
+  }
+
+  .project-header {
+    padding: 20px 20px;
+    gap: 12px;
+  }
+
+  .project-detail-inner {
+    padding: 20px 20px;
+  }
+
+  .project-title {
+    font-size: 0.95em;
+  }
+}

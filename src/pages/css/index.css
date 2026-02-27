@@ -13,4 +13,7 @@ code {
     monospace;
 }
 
-
+a, a:-webkit-any-link {
+  color: unset;
+  text-decoration: none;
+}
