@@ -1,3 +1,4 @@
+/* profile.css */
 .profile-page {
   background-image: url('../images/lrc_20231229_30-102.jpg');
   background-size: cover;
@@ -5,4 +6,34 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   padding: 60px 0;
+}
+
+/* PC：左右にオフセット */
+.block-left {
+  margin-left: 8% !important;
+  margin-right: auto !important;
+}
+
+.block-right {
+  margin-left: auto !important;
+  margin-right: 8% !important;
+}
+
+/* スマホ：中央寄せに統一 */
+@media (max-width: 768px) {
+
+  .block-left,
+  .block-right {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* 文字サイズも少し小さく */
+  .profile-block p:first-child {
+    font-size: 0.65em !important;
+  }
+
+  .profile-block p:last-child {
+    font-size: 1em !important;
+  }
 }
