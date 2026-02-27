@@ -44,6 +44,8 @@ const ProfileBlock = ({ title, content, direction = 'left' }) => {
         padding: '28px 36px',
         width: '85%',
         maxWidth: '560px',
+        marginLeft: 'auto',
+        arginRight: 'auto',
 
         // グラスモーフィズム
         background: 'rgba(255, 255, 255, 0.12)',

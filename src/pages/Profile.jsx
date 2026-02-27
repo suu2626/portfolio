@@ -20,14 +20,15 @@ const blocks = [
 
 const Profile = () => (
   <div style={{ 
-    padding: '40px 0',
+      padding: '40px 0',
+      overflowX: 'hidden',
       backgroundImage: `url(${bgImage})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       minHeight: '100vh',
-    }}  
-  >
+    }}>
+      
     {blocks.map((block, index) => (
       <ProfileBlock
         key={index} 
