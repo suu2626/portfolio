@@ -30,10 +30,10 @@
 
   /* 文字サイズも少し小さく */
   .profile-block p:first-child {
-    font-size: 0.65em !important;
+    font-size: 0.62em !important;
   }
 
   .profile-block p:last-child {
-    font-size: 1em !important;
+    font-size: 0.72em !important;
   }
 }
