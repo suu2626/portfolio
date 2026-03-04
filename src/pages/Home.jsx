@@ -44,7 +44,7 @@ const Home = () => {
             onClick={() => alert('準備中です')}
             style={{ cursor: 'pointer' }}
           >
-            <Link to="#">スキル</Link>
+            <Link to="#">　 スキル 　</Link>
           </span> → 保有スキル一覧
         </li>
         <li>
@@ -52,7 +52,7 @@ const Home = () => {
             onClick={() => alert('準備中です')}
             style={{ cursor: 'pointer' }}
           >
-            <Link to="#">お問合せ</Link>
+            <Link to="#">　お問合せ　</Link>
           </span>
         </li>
       </ul>
