@@ -7,8 +7,6 @@ import Projects from './pages/Projects';
 function App() {
   return (
       <div className="App">
-        <header className="App-header"></header>
-
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
