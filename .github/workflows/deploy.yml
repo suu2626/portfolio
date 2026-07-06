@@ -8,6 +8,11 @@ on:
 permissions:
   contents: write
 
+# 連続pushでもデプロイ同士が競合しないよう、実行中の古いデプロイはキャンセルする
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
