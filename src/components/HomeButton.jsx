@@ -1,8 +1,30 @@
 // HomeButton.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const HomeButton = () => {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    // 2秒後に表示
+    const timer = setTimeout(() => setVisible(true), 2000);
+
+    // 画面最下部までスクロールしたら表示
+    const handleScroll = () => {
+      const scrolledToBottom =
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 2;
+      if (scrolledToBottom) setVisible(true);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <Link
       to="/"
@@ -26,7 +48,9 @@ const HomeButton = () => {
         fontWeight: '500',
         letterSpacing: '0.05em',
         fontFamily: "'Helvetica Neue', sans-serif",
-        transition: 'background 0.3s, border-color 0.3s',
+        opacity: visible ? 1 : 0,
+        pointerEvents: visible ? 'auto' : 'none',
+        transition: 'opacity 0.6s ease, background 0.3s, border-color 0.3s',
       }}
       onMouseEnter={e => {
         e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
