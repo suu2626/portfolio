@@ -18,20 +18,33 @@ const skillCards = [
     tags: ['Java', 'JavaScript', 'SQL', 'COBOL', 'HTML', 'CSS'],
   },
   {
-    label: '// FRAMEWORKS & TOOLS',
+    label: '// FRAMEWORKS',
     accent: 'accent-red',
-    title: 'フレームワーク・ツール',
+    title: 'フレームワーク',
     desc: (
       <>
-        本サイトも<strong>React</strong>で構築。Gitでのチーム開発、
-        <strong>GitHub Actions</strong>によるCI/CDまで一通り扱います。
+        バックエンドは<strong>Spring Boot</strong>、フロントは<strong>React</strong>。
+        本サイトもReactで構築しています。
       </>
     ),
-    tags: ['React', 'Git', 'GitHub', 'GitHub Actions'],
+    tags: ['Spring Boot', 'React'],
+  },
+  {
+    label: '// TOOLS',
+    accent: 'accent-lime',
+    title: 'ツール',
+    wide: true,
+    desc: (
+      <>
+        Gitでのチーム開発、<strong>GitHub Actions</strong>によるCI/CDに加え、
+        デザイン実務で使い込んだ<strong>Photoshop・Illustrator</strong>も扱えます。
+      </>
+    ),
+    tags: ['Git', 'GitHub', 'GitHub Actions', 'Photoshop', 'Illustrator'],
   },
   {
     label: '// ENGINEERING PROCESS',
-    accent: 'accent-lime',
+    accent: 'accent-red',
     title: '開発工程',
     wide: true,
     sticker: 'FULL CYCLE',
@@ -53,7 +66,7 @@ const skillCards = [
   },
   {
     label: '// CREATIVE & MARKETING',
-    accent: 'accent-red',
+    accent: 'accent-lime',
     title: 'デザイン・マーケティング',
     wide: true,
     desc: (
