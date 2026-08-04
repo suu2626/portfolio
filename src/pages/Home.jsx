@@ -22,6 +22,8 @@ const Home = () => {
           href="https://www.freecounterstat.com"
           title="hit counters"
           className="external-link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             src="https://counter1.optistats.ovh/private/freecounterstat.php?c=1plh6b8btuadqgsmesj6nje7tkn2blxm"
@@ -40,20 +42,16 @@ const Home = () => {
         <li><Link to="/profile">プロフィール</Link> → 簡単な自己紹介です</li>
         <li><Link to="/projects">プロジェクト</Link> → 過去参画案件</li>
         <li>
-          <span
-            onClick={() => alert('準備中です')}
-            style={{ cursor: 'pointer' }}
-          >
-            <Link to="#">　 スキル 　</Link>
-          </span> → 保有スキル一覧
+          <a
+            href="#/"
+            onClick={(e) => { e.preventDefault(); alert('準備中です'); }}
+          >　 スキル 　</a> → 保有スキル一覧
         </li>
         <li>
-          <span
-            onClick={() => alert('準備中です')}
-            style={{ cursor: 'pointer' }}
-          >
-            <Link to="#">　お問合せ　</Link>
-          </span>
+          <a
+            href="#/"
+            onClick={(e) => { e.preventDefault(); alert('準備中です'); }}
+          >　お問合せ　</a>
         </li>
       </ul>
 

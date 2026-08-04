@@ -34,9 +34,9 @@ const ProjectItem = ({ project, index }) => {
   return (
     <motion.div
       className="project-item"
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: index * 0.1, ease: 'easeOut' }}
+      transition={{ duration: 0.4, delay: index * 0.06, ease: 'easeOut' }}
     >
       {/* ヘッダー（クリックでトグル） */}
       <button
@@ -104,9 +104,9 @@ const Projects = () => {
         {/* タイトル */}
         <motion.div
           className="projects-header"
-          initial={{ opacity: 0, y: -30 }}
+          initial={{ opacity: 0, y: -16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
+          transition={{ duration: 0.45, ease: 'easeOut' }}
         >
           <p className="projects-label">WORKS</p>
           <h1 className="projects-title">Projects</h1>
