@@ -35,18 +35,13 @@ const Home = () => {
         人目のお客様です！
       </p>
 
-      <p>最終更新日 2026/02/26</p>
+      <p>最終更新日 2026/08/04</p>
 
       <div className="menu">★ メニュー ★</div>
       <ul className="menu-list">
         <li><Link to="/profile">プロフィール</Link> → 簡単な自己紹介です</li>
         <li><Link to="/projects">プロジェクト</Link> → 過去参画案件</li>
-        <li>
-          <a
-            href="#/"
-            onClick={(e) => { e.preventDefault(); alert('準備中です'); }}
-          >　 スキル 　</a> → 保有スキル一覧
-        </li>
+        <li><Link to="/skills">　 スキル 　</Link> → 保有スキル一覧</li>
         <li>
           <a
             href="#/"
@@ -60,8 +55,12 @@ const Home = () => {
         <table align="center" border="1" cellPadding="5">
           <tbody>
             <tr>
+              <td>2026/08/04</td>
+              <td>スキルページを公開<span className="blink">☆New</span></td>
+            </tr>
+            <tr>
               <td>2026/02/26</td>
-              <td>プロジェクトページを公開<span className="blink">☆New</span></td>
+              <td>プロジェクトページを公開</td>
             </tr>
             <tr>
               <td>2025/07/06</td>

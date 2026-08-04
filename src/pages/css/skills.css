@@ -1,0 +1,172 @@
+/* skills.css */
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+.skills-page {
+  min-height: 100svh;
+  background-color: #0a0a0a;
+  /* 参考サイト風のドットグリッド背景 */
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 22px 22px;
+  padding: 60px 0 80px;
+  overflow-x: hidden;
+}
+
+.skills-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ヘッダー */
+.skills-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.skills-label {
+  font-family: 'DotGothic16', 'MS Gothic', monospace;
+  font-size: 0.85em;
+  letter-spacing: 0.35em;
+  color: #ff4b2b;
+  margin: 0 0 10px 0;
+}
+
+.skills-title {
+  font-family: 'DotGothic16', 'MS Gothic', monospace;
+  font-size: clamp(3rem, 10vw, 5.5rem);
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-shadow:
+    0 0 1px rgba(255, 255, 255, 0.9),
+    0 0 18px rgba(217, 255, 61, 0.25);
+}
+
+.skills-sub {
+  font-family: 'DotGothic16', 'MS Gothic', monospace;
+  font-size: 0.82em;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 14px 0 0 0;
+  letter-spacing: 0.2em;
+}
+
+/* カードグリッド */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.skill-card {
+  position: relative;
+  background: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 22px;
+  padding: 30px 32px 28px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.skill-card--wide {
+  grid-column: 1 / -1;
+}
+
+/* カードラベル（ピクセル風 EN ラベル） */
+.skill-card-label {
+  font-family: 'DotGothic16', 'MS Gothic', monospace;
+  font-size: 0.78em;
+  letter-spacing: 0.28em;
+  margin: 0 0 12px 0;
+}
+
+.skill-card-label.accent-lime { color: #d9ff3d; }
+.skill-card-label.accent-red { color: #ff4b2b; }
+
+/* カード見出し（ドットマトリクス風） */
+.skill-card-title {
+  font-family: 'DotGothic16', 'MS Gothic', monospace;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  color: #ffffff;
+  margin: 0 0 14px 0;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+}
+
+.skill-card-desc {
+  font-size: 0.8em;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.66);
+  margin: 0 0 20px 0;
+  font-family: 'Noto Sans JP', 'Helvetica Neue', sans-serif;
+}
+
+.skill-card-desc strong {
+  font-weight: 600;
+  color: #d9ff3d;
+}
+
+/* スキルタグ */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  font-family: 'DotGothic16', 'MS Gothic', monospace;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  padding: 7px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  transition: border-color 0.25s, color 0.25s, background 0.25s;
+}
+
+.skill-tag:hover {
+  border-color: #d9ff3d;
+  color: #d9ff3d;
+  background: rgba(217, 255, 61, 0.08);
+}
+
+/* NEWステッカー（ホログラム風） */
+.skill-sticker {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-family: 'DotGothic16', 'MS Gothic', monospace;
+  font-size: 0.72em;
+  letter-spacing: 0.18em;
+  padding: 5px 12px;
+  border-radius: 8px;
+  transform: rotate(6deg);
+  color: #0a0a0a;
+  background: linear-gradient(120deg, #d9ff3d, #7dffd4 45%, #c9a5ff 80%);
+  box-shadow: 0 2px 10px rgba(217, 255, 61, 0.25);
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .skills-page {
+    padding: 40px 0 60px;
+  }
+
+  .skills-container {
+    padding: 0 16px;
+  }
+
+  .skills-header {
+    margin-bottom: 36px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .skill-card {
+    padding: 24px 20px 22px;
+  }
+}
