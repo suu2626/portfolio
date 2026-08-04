@@ -15,7 +15,7 @@ const skillCards = [
         レガシーな<strong>COBOL</strong>バッチの保守まで対応します。
       </>
     ),
-    tags: ['Java', 'JavaScript', 'SQL', 'COBOL', 'HTML', 'CSS'],
+    tags: ['Java', 'JavaScript', 'PHP', 'SQL', 'COBOL', 'HTML', 'CSS'],
   },
   {
     label: '// FRAMEWORKS',
@@ -23,11 +23,11 @@ const skillCards = [
     title: 'フレームワーク',
     desc: (
       <>
-        バックエンドは<strong>Spring Boot</strong>、フロントは<strong>React</strong>。
+        バックエンドは<strong>Spring Boot・Struts</strong>、フロントは<strong>React</strong>。
         本サイトもReactで構築しています。
       </>
     ),
-    tags: ['Spring Boot', 'React'],
+    tags: ['Spring Boot', 'Struts', 'React'],
   },
   {
     label: '// TOOLS',
