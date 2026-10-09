@@ -6,6 +6,13 @@ import HomeButton from '../components/HomeButton';
 
 const projects = [
   {
+    id: 4,
+    title: 'メディア運営サイト開発',
+    detail: [
+      'PHPを用いたメディアサイトの開発・運営を担当。DBはMySQLを使用。','取材記事をはじめとするコンテンツの管理機能を実装し、記事の登録・更新・公開までの運用を整備。','顧客データの分析結果をもとにページ構成や導線を改善し、サイトの最適化を継続的に実施。',
+    ]
+  },
+  {
     id: 1,
     title: '設備管理・基幹システムの保守運用',
     detail: [

@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# 作業ログ（ローカル専用・公開しない）
+/work-log.html
