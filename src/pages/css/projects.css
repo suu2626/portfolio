@@ -175,6 +175,16 @@
   font-family: 'Noto Sans JP', 'Helvetica Neue', sans-serif;
 }
 
+.project-detail-placeholder a {
+  color: #7dd3fc;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.project-detail-placeholder a:hover {
+  color: #bae6fd;
+}
+
 /* スマホ対応 */
 @media (max-width: 768px) {
   .projects-page {

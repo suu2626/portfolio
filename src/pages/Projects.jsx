@@ -33,6 +33,14 @@ const projects = [
       '顧客との要件打ち合わせから実装・テストまでを担当。','基幹システムとのデータ連携機能、およびトップ・商品・カテゴリ・カート・マイページの各ページを実装。','検証環境での結合テスト、複数人による総合テストを実施し品質を担保。',
     ]
   },
+  {
+    id: 5,
+    title: '【個人開発】ポートフォリオサイト（本サイト）',
+    detail: [
+      'React（Create React App）で構築し、GitHub ActionsによりmainへのpushでGitHub Pagesへ自動デプロイ。','アニメーションはframer-motion、ルーティングはreact-router-domを使用。テストの整備やCIの保守も自ら実施。','開発はAIエージェント（Claude Code）と協働し、Codexによるコードレビューを経てから公開する流れで運用。',
+      <a key="repo" href="https://github.com/suu2626/portfolio" target="_blank" rel="noopener noreferrer">ソースコード（GitHub）</a>,
+    ]
+  },
 ];
 
 const ProjectItem = ({ project, index }) => {

@@ -77,6 +77,21 @@ const skillCards = [
     ),
     tags: ['Webデザイン', 'ECサイト運営', 'マーケティング'],
   },
+  {
+    label: '// NOW LEARNING',
+    accent: 'accent-red',
+    title: '学習中：AI駆動開発',
+    wide: true,
+    sticker: 'NOW LEARNING',
+    desc: (
+      <>
+        AIエージェントを開発の相棒にした進め方を実践中。<strong>Claude Code</strong>が実装し、
+        <strong>Codex</strong>がレビューする二段構えで、方針の判断と最終確認は人が担います。
+        レビューを通さないとpushできない仕組みをフックで組み込み、本サイトの更新もこの体制で行っています。
+      </>
+    ),
+    tags: ['Claude Code', 'Codex', 'AIコードレビュー', 'フックによる自動化', 'プロンプト設計'],
+  },
 ];
 
 const Skills = () => {

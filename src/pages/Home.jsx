@@ -35,7 +35,7 @@ const Home = () => {
         人目のお客様です！
       </p>
 
-      <p>最終更新日 2026/08/04</p>
+      <p>最終更新日 2026/10/09</p>
 
       <div className="menu">★ メニュー ★</div>
       <ul className="menu-list">
@@ -55,8 +55,12 @@ const Home = () => {
         <table align="center" border="1" cellPadding="5">
           <tbody>
             <tr>
+              <td>2026/10/09</td>
+              <td>プロジェクト・スキルを追加<span className="blink">☆New</span></td>
+            </tr>
+            <tr>
               <td>2026/08/04</td>
-              <td>スキルページを公開<span className="blink">☆New</span></td>
+              <td>スキルページを公開</td>
             </tr>
             <tr>
               <td>2026/02/26</td>
